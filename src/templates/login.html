@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <section class="flex flex-col justify-center items-center">
+        <nav class="absolute top-0 flex justify-around items-center h-[50px] bg-gray-300 w-full">
+            <a href="/">Home</a>
+            <a href="/login">Login</a>
+            <a href="/register">Register</a>
+        </nav>
+        <h1 class="font-bold text-3xl mt-[80px] mb-[10px]">Login</h1>
+        <form class="flex flex-col justify-center bg-gray-300 w-[50%] p-3 gap-3 rounded-md" action="POST">
+            <label for="email">Email:</label>
+            <input class="bg-white p-2 rounded-md" type="email" name="email"required>
+            <label for="password">Password:</label>
+            <input class="bg-white p-2 rounded-md" type="password" name="password" required>
+            <button type="submit">Iniciar sesión</button>
+        </form>
+        <footer class="flex justify-center items-center absolute bottom-0 h-[50px] bg-gray-300 w-full">
+            Footer
+        </footer>
+    </section>
+
+</body>
+</html>
